@@ -1,0 +1,61 @@
+.Container_video, .Container_img {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Foto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.IMG {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas padrão */
+    gap: 30px; /* Espaçamento entre as imagens */
+}
+
+.Video {
+    width: 97%;
+    display: flex;
+    justify-content: center;
+}
+
+.Video video {
+    width: 100%; /* Ajusta à largura do contêiner */
+    max-height: 500px; /* Limita a altura */
+    object-fit: cover; /* Preenche sem distorcer */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.IMG img {
+    width: 100%; /* Ajusta o tamanho ao espaço disponível */
+    height: 350px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Corta a imagem para preencher o espaço uniformemente */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .IMG {
+        grid-template-columns: repeat(1, 1fr); /* Uma coluna em telas menores */
+        gap: 20px; /* Reduz o espaçamento */
+    }
+    
+    .Video video {
+        max-height: 300px; /* Ajusta a altura máxima para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .IMG img {
+        height: 250px; /* Reduz a altura das imagens em telas muito pequenas */
+    }
+    
+    .Video video {
+        max-height: 200px; /* Reduz ainda mais a altura máxima do vídeo */
+    }
+}
