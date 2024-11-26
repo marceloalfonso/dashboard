@@ -6,6 +6,9 @@ export const Container = styled.header`
   background-color: ${GlobalStyle.bg_color};
   font-family: ${GlobalStyle.font};
   padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 768px) {
     height: auto;
@@ -35,6 +38,8 @@ export const NavList = styled.ul`
   align-items: center;
   list-style: none;
   gap: 20px;
+  margin: 0;
+  padding: 0;
 
   @media (max-width: 768px) {
     flex-direction: column;
