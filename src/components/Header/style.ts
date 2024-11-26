@@ -38,8 +38,8 @@ export const NavList = styled.ul`
   align-items: center;
   list-style: none;
   gap: 20px;
+  padding: 20px 0 10px 0;
   margin: 0;
-  padding: 0;
 
   @media (max-width: 768px) {
     flex-direction: column;
